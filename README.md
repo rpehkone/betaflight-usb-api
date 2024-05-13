@@ -6,16 +6,28 @@
 - Read sensors over serial
 - Control motors over serial
 
-## App build via Vite (web)
+## this phones home every button press
+```
+https://github.com/rpehkone/betaflight-usb-api/blob/master/src/js/tabs/motors.js#L1178
+    https://github.com/rpehkone/betaflight-usb-api/blob/master/src/js/Analytics.js#L93
+        https://github.com/rpehkone/betaflight-usb-api/blob/master/src/js/BuildApi.js#L9
+```
 
+## Usage
+
+make sure usb cable supports data  
+first test connection with betaflight-configurator  
+
+
+## App build via Vite (web)
 ### Development
 
-1. Install node.js (refer to [.nvmrc](./.nvmrc) for required version)
-2. Install yarn: `npm install yarn -g`
-3. Change to project folder and run `yarn install`.
-4. Run `yarn dev`.
-
-The web app will be available at http://localhost:8000 with full HMR.
+`nvm install 20.10.0`
+`nvm use 20.10.0`
+Install yarn: `npm install yarn -g`
+Run `yarn install`.
+Run `yarn dev`.
+http://localhost:8000 with full hot reload
 
 ### Build Preview
 
